@@ -1,0 +1,19 @@
+.header{
+	display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: auto;
+}
+
+.headerMenu a{
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 10px;
+	color: #565673;
+	font-size: 14px;
+	letter-spacing: 1.2px;
+}
+
+.headerMenu a:hover{
+	color: #5f9ea0;
+	cursor: pointer;
+}
