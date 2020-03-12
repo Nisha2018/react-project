@@ -1,12 +1,18 @@
 import React from 'react';
 import './style.css';
+import Card from '../../components/UI/Card';
+import BlogPost from '../../components/BlogPost';
+import Sidebar from '../../components/Sidebar';
 
 
 const Post = (props)=>{
+
+	console.log(props);
+
 	return(
 		<section className="container">
-		  <div className="blogPost">blogPost</div>
-		  <div className="sidebar">sidebar</div>
+		  <BlogPost {...props}/>
+		  <Sidebar />
 		</section>
 	)
 }

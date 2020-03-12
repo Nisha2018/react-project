@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import SocialIcons from '../SocialIcons';
 
 const Header = props => {
 	return(
@@ -10,7 +11,7 @@ const Header = props => {
 	  		<a>Contact Us</a>
 	  	</nav>
 	  	<div>
-	  		Social Media Links
+	  		<SocialIcons />
 	  	</div>
 	  </header>
 	)

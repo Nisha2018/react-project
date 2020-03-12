@@ -1,0 +1,9 @@
+.socialIcons{
+	display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+
+.socialIcons a:hover{
+	color: blue;
+	cursor: pointer;
+}
