@@ -15,6 +15,6 @@ const Post = (props)=>{
 		  <Sidebar />
 		</section>
 	)
-}
+} 
 
 export default Post;

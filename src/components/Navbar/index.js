@@ -29,7 +29,7 @@ const Navbar = (props)=>{
 		  <div className="search">
 		    <form onSubmit={submitSearch}>
 			  	<input type="text" className={searchClass} placeholder="Search" />
-			  	<img onclick={openSearch} className="searchIcon" src={require('../../assets/icons/search.png')} alt="Search" />
+			  	<img onClick={openSearch} className="searchIcon" src={require('../../assets/icons/search.png')} alt="Search" />
 		  	</form>
 		  </div>
 		</div>

@@ -8,13 +8,13 @@ const BlogPost = (props)=>{
 
 	const[post,setPost] = useState({
 		id: "",
-        blogCategory: "",
-        blogTitle : "",
-        slug: "",
-        postedOn: "",
-        author: "",
-        blogImage: "",
-        blogText: ""
+    blogCategory: "",
+    blogTitle : "",
+    slug: "",
+    postedOn: "",
+    author: "",
+    blogImage: "",
+    blogText: ""
 	});
 
 
@@ -27,6 +27,8 @@ const BlogPost = (props)=>{
 		setPost(post);
 		setPostId(postId);
 	},[post,props.match.params.postId]);
+
+
 
 	if(post.blogImage=="") return null;
 
@@ -43,13 +45,15 @@ const BlogPost = (props)=>{
           	<img src={require(`../../blogPostImages/${post.blogImage}`)} alt="Post Image" />
           </div>
 
-          <div className="
-
-          postContent">
+          <div className="postContent">
           	<h3>{post.blogTitle}</h3>
           	<p>{post.blogText}</p>
           </div>
         </Card>
+
+
+
+
       </div>
 	)
 }
